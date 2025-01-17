@@ -205,6 +205,84 @@ header{
     color: #ffffff;
 }
 
+/* ! Some facts */
+
+.some_facts_description > h4{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.some_facts_description > p{
+    max-width: 542px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+.some_facts_boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.some_facts_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 242px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 55px 35px;
+}
+.some_facts_box h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 2.8rem;
+    font-weight: 600;
+
+}
+.some_facts_box p{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* ! Sponsors Section */
+
+.sponsors{
+    text-align: center;
+}
+.sponsors_content{
+    max-width: 542px;
+    margin: 0 auto;
+}
+.sponsors h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.sponsors p{
+    line-height: 1.6rem;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+.sponsors_images{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* justify-content: space-evenly; */
+    justify-items: center;
+    /* gap: 10px; */
+    filter: grayscale(100%);
+}
+
+/* ! Footer design */
+footer{
+    max-width: 1440px;
+    background: rgba(255, 144, 14, 0.1);
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 30px;
+}
+
 
 
 
@@ -238,6 +316,17 @@ header{
     .features_love_mini_container{
         width: calc(100% - 75px);
     } */
+     .some_facts{
+        padding: 0 5px;
+     }
+     .some_facts_boxes, .sponsors_images{
+        grid-template-columns: 1fr;
+        /* width: 99%; */
+        gap: 20px;
+     }
+     .sponsors_images{
+        gap: 40px;
+     }
 }
 
 
@@ -250,5 +339,23 @@ header{
     .quick_list_images{
         width: 99%;
     }
+    .features_love{
+        flex-direction: column-reverse;
+    }
+    .right_features_love, .left_features_love{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .some_facts{
+        padding: 0 5px;
+     }
+    .some_facts_boxes, .sponsors_images{
+        grid-template-columns: repeat(2, 1fr);
+        /* width: 99%; */
+        gap: 20px;
+     }
+     .sponsors_images{
+        gap: 40px;
+     }
     
 }
