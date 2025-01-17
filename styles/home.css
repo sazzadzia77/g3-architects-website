@@ -102,7 +102,7 @@ header{
     font-weight: 400;
     font-size: 1rem;
     margin: 33px 0;
-    line-height: 26px;
+    line-height: 1.6rem;
 }
 .header_banner img{
     width: 100%;
@@ -130,9 +130,79 @@ header{
 .quick_list_content_container p{
     font-weight: 400;
     font-size: 1rem;
-    line-height: 26px;
+    line-height: 1.6rem;
     margin-top: 25px;
     margin-bottom: 32px;
+}
+
+/* !Features_love section Design */
+
+.features_love{
+    display: flex;
+    justify-content: space-between;
+    gap: 54px;
+}
+.left_features_love{
+    max-width: 586px;
+}
+.left_features_love > h1{
+    font-weight: 700;
+    font-size: 2.8rem;
+    padding-left:21px;
+    border-left: 5px solid #FF900E;
+}
+.left_features_love > p, .features_love_mini_container > p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+.features_love_mini_container{
+    padding: 30px;
+    padding-right: 42px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.features_love_mini_container > h4{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.features_love_mini_container > p{
+    margin-top: 10px;
+}
+.right_features_love{
+    max-width: 708px;
+}
+.right_features_love img{
+    width: 100%;
+}
+/* .right_features_love_img img{
+   width: 100%;
+} */
+.badge{
+    max-width: 342px;
+    text-align: center;
+    background: #FF900E;
+    padding: 45px 42px;
+    border-radius: 8px;
+    margin-left: -92px;
+    margin-top: -123px;
+    z-index: 3;
+    position: relative;
+}
+.year{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    color: #ffffff;
+}
+.experience{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #ffffff;
 }
 
 
@@ -142,7 +212,7 @@ header{
 /* ? Responsive For Smaller Devices */
 
 @media screen and (max-width: 576px){
-    .logo_nav_container, .nav_items, .quick_list{
+    .logo_nav_container, .nav_items, .quick_list, .features_love{
         flex-direction: column;
     }
     .quick_list_images{
@@ -156,6 +226,12 @@ header{
     .quick_list_content{
         padding: 0 5px;
     }
+    /* .left_features_love{
+        width: 100%;
+    }
+    .features_love_mini_container{
+        width: calc(100% - 75px);
+    } */
 }
 
 
